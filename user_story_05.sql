@@ -4,6 +4,6 @@
 SELECT count(*)
 FROM transactions_sample
 WHERE type_batiment ='Appartement'
-And n_pieces ='1'
+AND n_pieces ='1'
 AND date_transaction LIKE '2022%'
 AND ville='RENNES';
