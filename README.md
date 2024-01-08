@@ -9,4 +9,19 @@ Chaque apprenant doit installer PostgreSQL (remplacé par dbeaver) sur son poste
 Ensuite vous vous répartissez les User Stories et chacun implémente un script SQL par User Story à pusher sur un repo git.
 Les scripts devront être nommés: user_story_{num\_user\_story}.sql (exemple: user_story_5.sql)
 
+# Mise en place
 
+Sur Github, il faut créer un repository.
+    Avec un nom et la visibilité(public ou privée)
+Après la création, On copie l'adresse SSH
+
+Sur le WSL, sur le bon chemin (utiliser cd)
+    on utilise git clone avec l'adresse SSH
+        Si il ya un problème de key (The authenticity of host 'github.com (140.82.121.3)' can't be established):
+            il faut aller sur github, dans setting, puis 'SSH and GPG keys' et créer un new SSH
+                Sur la WSL, il faut faire un cd / et un ls -la pour avoir le id_ed255519.pub et on fait un cat id_ed255519.pub
+                ssh-keygen -t ed25519 -C "mail"
+                On peut donc faire un git clone avec avec l'adresse
+
+
+On peut par la suite faire git add ., git commit -m"commentaires" et un git push pour intégrer les fichiers à versionner
