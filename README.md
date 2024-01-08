@@ -20,8 +20,8 @@ Sur le WSL, sur le bon chemin (utiliser cd)
         Si il ya un problème de key (The authenticity of host 'github.com (140.82.121.3)' can't be established):
             il faut aller sur github, dans setting, puis 'SSH and GPG keys' et créer un new SSH
                 Sur la WSL, il faut faire un cd / et un ls -la pour avoir le id_ed255519.pub et on fait un cat id_ed255519.pub
-                ssh-keygen -t ed25519 -C "mail"
-                On peut donc faire un git clone avec avec l'adresse
+                faire un ssh-keygen -t ed25519 -C "mail", copier la key et coller dans key et nommer le pc dans github
+                On peut donc faire un git clone avec avec l'adresse et faire yes yes
 
 
 On peut par la suite faire git add ., git commit -m"commentaires" et un git push pour intégrer les fichiers à versionner
